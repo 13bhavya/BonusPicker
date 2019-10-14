@@ -8,7 +8,18 @@
 
 import UIKit
 
-class SingleComponentPickerViewController: UIViewController {
+class SingleComponentPickerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    @IBOutlet weak var singlePicker: UIPickerView!
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        <#code#>
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        <#code#>
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
